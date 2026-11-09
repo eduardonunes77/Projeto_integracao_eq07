@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Racismo e Impactos</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+
+    <nav>
+      <a href="incio.html">Início</a>
+      <a href="entendaOproblema.html">Entenda o Problema</a>
+      <a href="tiposderacismo.html" class="ativo">Tipos de Racismo</a>
+      <a href="soluções.html">Soluções</a>
+      <a href="ajuda.html">Onde Buscar Ajuda</a>
+    </nav>
+
+
+    <header class="banner-principal">
+        <div class="banner-conteudo">
+            <span class="tag-tema">CONSCIENTIZAÇÃO</span>
+            <h1>TIPOS E IMPACTOS DO RACISMO</h1>
+            <p>Compreenda como o preconceito se manifesta de diferentes formas na nossa sociedade.</p>
+            <a href="soluções.html" class="btn-destaque">Soluções</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid-destaques">
+        <div class="card-destaque">
+            <h3>Cultural</h3>
+            <p>Desvalorização de saberes, religiões e manifestações não brancas.</p>
+        </div>
+        <div class="card-destaque">
+            <h3>Individual</h3>
+            <p>Agressões diretas, ofensas e negação de acesso (Crime de Ódio).</p>
+        </div>
+        <div class="card-destaque">
+            <h3>Estrutural</h3>
+            <p>Desigualdade enraizada nas bases econômicas, sociais e políticas.</p>
+        </div>
+        </div>
+    </main>
+
+    <button id="btn-destaque">
+        Destacar Tipos de Racismo
+    </button>
+
+    <main class="conteudo-principal">
+        <section id="impactos" class="conteudo">
+
+            <h2>Tipos de Racismo</h2>
+            <p>Clique em uma das abas abaixo para entender cada manifestação do racismo:</p>
+    
+            
+            <div class="abas-navegacao">
+                <button class="aba-btn ativa" data-aba="cultural">Racismo Cultural</button>
+                <button class="aba-btn" data-aba="individual">Direto / Crime de Ódio</button>
+                <button class="aba-btn" data-aba="estrutural">Racismo Estrutural</button>
+            </div>
+    
+            
+            <div id="cultural" class="aba-conteudo ativa">
+                <h3>Racismo Cultural</h3>
+                <p>Baseia-se na falsa ideia de que uma cultura é superior a outra, desvalorizando manifestações, religiões (como o racismo religioso contra cultos de matriz africana), saberes, sotaques ou traços de povos não brancos.</p>
+                <div class="container-imagem">
+                    <img src="imagens.racismo/alma.jpg" alt="Imagem referente ao combate ao racismo" class="imagem-destaque">
+                </div>
+            </div>
+    
+            <div id="individual" class="aba-conteudo">
+                <h3>Preconceito e Discriminação Racial (Crime de Ódio)</h3>
+                <p>O racismo direto (ou individual) ocorre quando uma pessoa ou grupo agride física ou verbalmente outra pessoa por conta de sua raça, ou nega seu acesso a locais e serviços. No Brasil, essa prática é crime e possui punições previstas pela <strong>Lei nº 7.716/1989</strong>.</p>
+                <div class="container-imagem">
+                    <img src="imagens.racismo/MULHERNEGRA.jpg" alt="Imagem referente ao combate ao racismo" class="imagem-destaque">
+                </div>
+            </div>
+    
+            <div id="estrutural" class="aba-conteudo">
+                <h3>Racismo Estrutural</h3>
+                <p>É a naturalização do racismo dentro das bases da sociedade. Ele não depende apenas de uma intenção individual, mas faz parte do funcionamento histórico das instituições, da economia, da política e da justiça, gerando desigualdade contínua.</p>
+                <div class="container-imagem">
+                    <img src="imagens.racismo/antiracista.jpg" alt="Imagem referente ao combate ao racismo" class="imagem-destaque">
+                </div>
+            </div>
+    
+           
+        </section>
+    </main>
+
+    
+
+
+    <footer>
+      <p><strong>Desenvolvido pelo Grupo:</strong> Eduardo Nunes e Carlos David | <strong>Tema:</strong> Racismo</p>
+      <ul class="lista-autores">
+        <li>Eduardo Nunes</li>
+        <li>Carlos David</li>
+      </ul>
+      <p>2026 - Trabalho Integrador de Front-End</p>
+    </footer>
+
+</body>
+</html>

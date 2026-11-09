@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde Buscar Ajuda - Canais de Denúncia</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+
+    <nav>
+      <a href="incio.html">Início</a>
+      <a href="entendaOproblema.html">Entenda o Problema</a>
+      <a href="tiposderacismo.html">Tipos de Racismo</a>
+      <a href="soluções.html">Soluções</a>
+      <a href="ajuda.html" class="ativo">Onde Buscar Ajuda</a>
+    </nav>
+
+
+    <header class="banner-principal">
+        <div class="banner-conteudo">
+            <span class="tag-tema">APOIO E DENÚNCIA</span>
+            <h1>ONDE BUSCAR AJUDA</h1>
+            <p>Racismo é crime imprescritível e inafiançável no Brasil. Conheça os canais oficiais de apoio.</p>
+        </div>
+    </header>
+
+ 
+    <main class="conteudo-principal">
+      <section id="ajuda" class="conteudo">
+          <h2>Canais de Denúncia e Apoio</h2>
+          <p>Se você sofreu ou presenciou um ato de racismo, é fundamental saber que racismo é crime imprescritível e inafiançável no Brasil.</p>
+          <p>Existem diversos canais oficiais e organizações da sociedade civil prontos para oferecer acolhimento jurídico e psicológico:</p>
+
+          <section id="simulador" class="simulador">
+            <h2>Solicite Sua Denúncia Em Nosso Canal:</h2>
+
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+
+            <label for="tipo-denuncia">Tipo de Denúncia:</label>
+            <select id="tipo-denuncia">
+                <option value="fisica">Violência Física</option>
+                <option value="verbal">Violência Verbal</option>
+                <option value="outros">Outros</option>
+            </select>
+            
+            <label for="descricao-denuncia">Conte sua Denúncia:</label>
+            <input type="text" id="descricao-denuncia" placeholder="Descreva sua denúncia">
+
+            <label for="telefone">Nº Telefone:</label>
+            <input
+                type="text"
+                id="telefone"
+                placeholder="+00 0000 0000"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+            >
+
+            <button type="button" id="btn-enviar">Enviar Denúncia</button>
+
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <button id="btn-topo" title="Voltar ao topo">↑ Inicio ↑</button>
+
+
+    <footer>
+      <p><strong>Desenvolvido pelo Grupo:</strong> Eduardo Nunes e Carlos David | <strong>Tema:</strong> Racismo</p>
+      <ul class="lista-autores">
+        <li>Eduardo Nunes</li>
+        <li>Carlos David</li>
+      </ul>
+      <p>2026 - Trabalho Integrador de Front-End</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entenda o Problema - Desigualdade Racial</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <nav>
+    <a href="incio.html">Início</a>
+    <a href="entendaOproblema.html" class="ativo">Entenda o Problema</a>
+    <a href="tiposderacismo.html">Tipos de Racismo</a>
+    <a href="soluções.html">Soluções</a>
+    <a href="ajuda.html">Onde Buscar Ajuda</a>
+  </nav>
+
+    <header class="banner-principal">
+        <div class="banner-conteudo">
+            <span class="tag-tema">DADOS SOCIAIS</span>
+            <h1>ENTENDA O PROBLEMA</h1>
+            <p>Os números e fatos que revelam a realidade da desigualdade racial no Brasil.</p>
+            <a href="tiposderacismo.html" class="btn-destaque">Tipos de Racismo</a>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+
+      <div class="grid-destaques">
+        <div class="card-destaque">
+            <h3 class="contador" data-alvo="70" data-sufixo="%">+0%</h3>
+            <p>Trabalhadores brancos ganham em média a mais que pretos ou pardos (IBGE).</p>
+        </div>
+        <div class="card-destaque">
+            <h3 class="contador" data-alvo="2.7" data-sufixo="x">0x</h3>
+            <p>Maior probabilidade de jovens negros serem vítimas de homicídio no país.</p>
+        </div>
+        <div class="card-destaque">
+            <h3 class="contador" data-alvo="30" data-sufixo="%">0%</h3>
+            <p>Apenas cerca de 30% dos cargos de gerência são ocupados por pessoas negras.</p>
+        </div>
+      </div>
+
+      <button id="btn-destaque">
+          Destacar Entenda o Problema
+      </button>
+
+      <section id="entendaOproblema" class="conteudo">
+          <h2>Dimensões do Racismo</h2>
+          <p>Para combater a desigualdade, é necessário entender como o preconceito se manifesta em diferentes níveis da sociedade:</p>
+          
+          <ul class="lista-dimensoes">
+            <li><strong>Individual:</strong> Manifesta-se em ofensas, preconceito direto e atitudes de rejeição interpessoal.</li>
+            <li><strong>Institucional:</strong> Ocorre quando normas, regras e práticas de empresas ou órgãos públicos excluem determinados grupos raciais.</li>
+            <li><strong>Estrutural:</strong> É a desigualdade histórica e profunda "embutida" no funcionamento da economia, educação e acesso à saúde.</li>
+          </ul>
+
+          <h3>Reportagem e Caso Real</h3>
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/0MTBvZwiCL4" 
+              title="Resgatada de trabalho escravo chora ao tocar mão de repórter" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p><strong>Impacto do vídeo:</strong> Este vídeo demonstra que as sequelas do racismo continuam afetando pessoas na sociedade atual.</p>
+
+          <p><strong>Conclusão:</strong> Não se trata apenas de insultos isolados, mas de uma estrutura histórica que perpetua privilégios para uns e desvantagens para outros. O combate exige uma postura <strong>antirracista</strong> ativa diária.</p>
+      </section>
+
+      
+      <section class="conteudo container-enquete">
+        <h2>Enquete Anônima</h2>
+        <p class="subtitulo-enquete"><strong>Converse conosco.</strong> Você já vivenciou ou presenciou alguma situação de preconceito?</p>
+        <p class="aviso-privacidade"><strong>🔒 Não solicitamos nome, e-mail nem identificação. Sua resposta é 100% anônima.</strong></p>
+        
+        <form id="formEnquete" class="form-enquete">
+          <fieldset class="grupo-campo">
+            <legend>Você já passou por alguma destas situações no ambiente escolar/acadêmico?</legend>
+            
+            <label class="opcao-card">
+              <input type="radio" name="categoria" value="racismo" required>
+              <span>Racismo / Injúria Racial</span>
+            </label>
+            
+            <label class="opcao-card">
+              <input type="radio" name="categoria" value="bullying">
+              <span>Bullying / Intimidação</span>
+            </label>
+            
+            <label class="opcao-card">
+              <input type="radio" name="categoria" value="cyberbullying">
+              <span>Cyberbullying (Agressão online)</span>
+            </label>
+
+            <label class="opcao-card">
+              <input type="radio" name="categoria" value="exclusao">
+              <span>Exclusão Social / Isolamento</span>
+            </label>
+            
+            <label class="opcao-card">
+              <input type="radio" name="categoria" value="nenhuma">
+              <span>Nenhuma destas situações</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="grupo-campo">
+            <legend>Sua Faixa Etária</legend>
+            <select name="faixa" id="faixa-etaria" required aria-label="Faixa etária">
+              <option value="">Selecione sua idade...</option>
+              <option value="ate14">Até 14 anos</option>
+              <option value="15a17">15 a 17 anos</option>
+              <option value="18mais">18 anos ou mais</option>
+            </select>
+          </fieldset>
+
+          
+          <button type="submit" class="btn-enviar-enquete">Enviar Resposta</button>
+        </form>
+
+        <p id="aviso" role="status" class="mensagem-status"></p>
+        
+
+       
+        <div id="painel-resultado" class="painel-resultado" style="display: none;">
+          <h3>Resultado Parcial da Comunidade</h3>
+          <div id="relatorio" class="relatorio-barras"></div>
+          <p id="total" class="total-votos"></p>
+        </div>
+        
+      </section>
+
+    </main>
+
+    
+
+    <footer>
+      <p><strong>Desenvolvido pelo Grupo:</strong> Eduardo Nunes e Carlos David | <strong>Tema:</strong> Racismo</p>
+      <ul class="lista-autores">
+        <li>Eduardo Nunes</li>
+        <li>Carlos David</li>
+      </ul>
+      <p>2026 - Trabalho Integrador de Front-End</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
